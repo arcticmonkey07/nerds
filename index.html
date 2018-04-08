@@ -9,48 +9,63 @@
 
 <body>
   <header class="main-header">
-    <div class="container">
-      <a class="header-logo"></a>
-      <nav>
-        <ul class="main-nav">
-          <li class="nav-item">Студия<a href="#"></a></li>
-          <li class="nav-item">Клиенты<a href="#"></a></li>
-          <li class="nav-item">Магазин<a href="#"></a></li>
-          <li class="nav-item">Контакты<a href="#"></a></li>
-        </ul>
-        <ul class="user-nav">
-          <li class="cart-item">Корзина<a href=""></a></li>
-        </ul>
-      </nav>
+    <nav class="main-navigation container">
+      <a class="header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds Логотип">
+      </a>
+      <ul class="site-nav">
+        <li class="nav-item">
+          <a class="nav-link active-link" href="#">Студия</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Клиенты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="user-nav">
+        <li class="cart-item">
+          <a class="cart-link nav-link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-    <main>
-      <section class="slider">
+  <main>
+    <section class="slider">
+      <div class="container">
         <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden slide-1" type="radio" id="slide-1" name="toggle" checked>
+        <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle">
+        <input class="visually-hidden slide-3" type="radio" id="slide-3" name="toggle">
         <div class="slider-controls">
-          <a class="switch active" href=""></a>
-          <a class="switch" href=""></a>
-          <a class="switch" href=""></a>
+          <label class="switch switch-active-1" for="slide-1"></label>
+          <label class="switch switch-active-2" for="slide-2"></label>
+          <label class="switch switch-active-3" for="slide-3"></label>
         </div>
         <ul class="slider-list">
-          <li class="slider-item">
-            <h3 class="promo">Долго, дорого,<br> скрупулезно.</h3>
-            <p class="promo-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+          <li class="slider-item slide-item-1">
+            <h3 class="slider-promo">Долго, дорого, скрупулезно.</h3>
+            <p class="slider-promo-text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item">
-            <h3>Любим математику как никто другой</h3>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <li class="slider-item slide-item-2">
+            <h3 class="slider-promo">Любим математику как никто другой</h3>
+            <p class="slider-promo-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item">
-            <h3>Только ночь,<br> только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+          <li class="slider-item slide-item-3">
+            <h3 class="slider-promo">Только ночь, только хардкор</h3>
+            <p class="slider-promo-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
