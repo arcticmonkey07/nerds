@@ -9,27 +9,27 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation container">
+    <nav class="main-nav container">
       <a class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds Логотип">
       </a>
-      <ul class="site-nav">
-        <li class="nav-item">
-          <a class="nav-link active-link" href="#">Студия</a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="#">Студия</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Клиенты</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Клиенты</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Магазин</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Магазин</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="user-nav">
-        <li class="cart-item">
-          <a class="cart-link nav-link" href="#">Корзина</a>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__cart" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +38,7 @@
   <main>
     <section class="slider">
       <div class="container">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества нашей веб-студии</h2>
         <input class="visually-hidden slide-1" type="radio" id="slide-1" name="toggle" checked>
         <input class="visually-hidden slide-2" type="radio" id="slide-2" name="toggle">
         <input class="visually-hidden slide-3" type="radio" id="slide-3" name="toggle">
@@ -47,21 +47,21 @@
           <label class="switch switch-active-2" for="slide-2"></label>
           <label class="switch switch-active-3" for="slide-3"></label>
         </div>
-        <ul class="slider-list">
-          <li class="slider-item slide-item-1">
-            <h3 class="slider-promo">Долго, дорого, скрупулезно.</h3>
-            <p class="slider-promo-text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+        <ul class="slider__list">
+          <li class="slider__item slide slide-item-1">
+            <h3 class="slide__lead">Долго, дорого, скрупулезно.</h3>
+            <p class="slide__text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+            <a class="button slide__button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide-item-2">
-            <h3 class="slider-promo">Любим математику как никто другой</h3>
-            <p class="slider-promo-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+          <li class="slider__item slide slide-item-2">
+            <h3 class="slide__lead">Любим математику как никто другой</h3>
+            <p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="buttonslide__button" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide-item-3">
-            <h3 class="slider-promo">Только ночь, только хардкор</h3>
-            <p class="slider-promo-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="slider-item-button button" href="#">Узнать больше</a>
+          <li class="slider__item slide slide-item-3">
+            <h3 class="slide__lead">Только ночь, только хардкор</h3>
+            <p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button slide__button" href="#">Узнать больше</a>
           </li>
         </ul>
       </div>
@@ -69,73 +69,73 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages-list">
-        <li class="advantages-item">
-          <img src="" alt="">
-          <h4 class="advantages-title">Веб-сайты</h4>
-          <p class="advantages-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="advantages-button button" href="#">Заказать</a>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img class="advantages__img-01" src="" alt="Веб сайты">
+          <h4 class="advantages__title">Веб-сайты</h4>
+          <p class="advantages__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="button advantages__button" href="#">Заказать</a>
         </li>
-        <li class="advantages-item">
-          <img src="" alt="">
-          <h4 class="advantages-title">Приложения</h4>
-          <p class="advantages-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="advantages-button button" href="#">Заказать</a>
+        <li class="advantages__item">
+          <img class="advantages__img-02" src="" alt="Приложения">
+          <h4 class="advantages__title">Приложения</h4>
+          <p class="advantages__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="button advantages__button" href="#">Заказать</a>
         </li>
-        <li class="advantages-item">
-          <img src="" alt="">
-          <h4 class="advantages-title">Презентации</h4>
-          <p class="advantages-text">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="advantages-button button" href="#">Заказать</a>
+        <li class="advantages__item">
+          <img class="advantages__img-03" src="" alt="Презентации">
+          <h4 class="advantages__title">Презентации</h4>
+          <p class="advantages__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="button advantages__button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
 
     <div class="studio-columns">
       <section class="studio">
-        <h3 class="studio-title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h3>
-        <p class="studio-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h4 class="studio-orders-title">Выполняем заказы на разработку:</h4>
-        <ul class="studio-order-list">
-          <li class="studio-item">Веб-сайтов любой сложности</li>
-          <li class="studio-item">Мобильных приложений для iOS и Android</li>
-          <li class="studio-item">Слайдшоу и видео для корпоративных презентаций</li>
+        <h3 class="studio__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h3>
+        <p class="studio__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h4 class="studio__orders-title">Выполняем заказы на разработку:</h4>
+        <ul class="studio__orders-list">
+          <li class="studio__item">Веб-сайтов любой сложности</li>
+          <li class="studio__item">Мобильных приложений для iOS и Android</li>
+          <li class="studio__item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
       
-      <section class="about-us">
+      <section class="results">
         <img src="" alt="">
-        <b class="about-us-text">С 2004 года Любим точность во всем:</b>
-        <table>
-          <tr>
-            <td>146%</td>
-            <td>100%</td>
-            <td>50%</td>
+        <b class="results__headline">С 2004 года Любим точность во всем:</b>
+        <table class="results__table">
+          <tr class="results__row">
+            <td class="results__cell">146%</td>
+            <td class="results__cell">100%</td>
+            <td class="results__cell">50%</td>
           </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+          <tr class="results__row">
+            <td class="results__cell">Уровень самоотдачи</td>
+            <td class="results__cell">Соблюдение сроков</td>
+            <td class="results__cell">Минимальная предоплата</td>
           </tr>
         </table>
       </section>
     </div>
 
-    <div class="studio-links">
-      <h4 class="visually-hidden">Партнеры</h4>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-      <a href=""></a>
-    </div>
+    <section class="our-partners">
+      <h2 class="visually-hidden">Партнеры</h2>
+      <a href=""><img class="our-partners__item" src="" alt="HTML Academy"></a>
+      <a href=""><img class="our-partners__item" src="" alt="Barbershop Borodinski"></a>
+      <a href=""><img class="our-partners__item" src="" alt="Pink"></a>
+      <a href=""><img class="our-partners__item" src="" alt="Mishka"></a>
+    </section>
 
     <section class="contacts">
       <h4 class="visually-hidden">Контакты</h4>
-      <div class="address">
-        <h4 class="contacts-title">NЁRDS Design Studio</h4>
-        <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="contacts-button button" href="">Напишите нам</a>
+      <div class="contacts__wrapper">
+        <h4 class="contacts__title">NЁRDS Design Studio</h4>
+        <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="contacts__phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <a class="button contacts__button" href="">Напишите нам</a>
       </div>
     </section>
 
@@ -143,14 +143,36 @@
 
   <footer class="main-footer">
     <ul class="footer-social">
-      <li class="social-item">Вконтакте</li>
-      <li class="social-item">Фейсбук</li>
-      <li class="social-item">Инстаграм</li>
+      <li class="social__link"><a href=""><span class="visually-hidden">Вконтакте</span></a></li>
+      <li class="social__link"><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
+      <li class="social__link"><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
     </ul>
     <div class="footer-promo">
-      <b class="promo-title">Давайте дружить, это выгодно!</b>
-      <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+      <b class="footer-promo__lead">Давайте дружить, это выгодно!</b>
+      <p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section class="feedback">
+    <h2 class="feedback__title">Напишите нам</h2>
+    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="feedback__container">
+        <p class="feedback__text">
+          <label class="feedback__item" for="feedback-name">Ваше имя:</label>
+          <input class="feedback__input" type="text" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback__text">
+          <label class="feedback__item" for="feedback-email">Ваш e-mail:</label>
+          <input class="feedback__input" type="text" id="feedback-email" placeholder="email@example.com">
+        </p>
+      </div>
+      <p>
+        <label class="feedback__item" for="feedback-text">Текст письма:</label>
+        <textarea class="feedback__textarea" id="feedback-text" name="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button feedback__button" type="submit">Отправить</button>
+    </form>
+    <button class="feedback__close"><span class="visually-hidden">Закрыть</span></button>
+  </section>
 </body>
 </html>

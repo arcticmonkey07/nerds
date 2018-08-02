@@ -53,7 +53,7 @@ a {
   padding: 0 20px;
 }
 
-.main-navigation {
+.main-nav {
   display: flex;
 }
 
@@ -70,7 +70,7 @@ a {
   opacity: 0.3;
 }
 
-.site-nav {
+.site-list {
   display: flex;
   margin: 0;
   margin-left: 201px;
@@ -79,11 +79,11 @@ a {
   list-style: none;
 }
 
-.nav-item {
+.site-list__item {
   padding-right: 46px;
 }
 
-.nav-link {
+.site-list__link {
   font-family: "Roboto Medium", Arial, sans-serif;
   line-height: 30px;
   font-weight: 500;
@@ -91,15 +91,15 @@ a {
   text-transform: uppercase;
 }
 
-.nav-link:hover {
+.site-list__link:hover {
   color: #fb565a;
 }
 
-.nav-link:active {
+.site-list__link:active {
   color: rgba(0,0,0,0.3);
 }
 
-.user-nav {
+.user-list {
   position: relative;
   margin: 0;
   padding: 0;
@@ -108,11 +108,11 @@ a {
   list-style: none;
 }
 
-.cart-item {
+.user-list__item {
   padding-left: 40px;
 }
 
-.cart-link::before {
+.user-list__cart::before {
   content: "";
   position: absolute;
   top: 32px;
@@ -177,7 +177,7 @@ a {
   border-radius: 50%;
 }
 
-.slider-list {
+.slider__list {
   margin: 0;
   padding: 0;
 }
@@ -209,19 +209,19 @@ a {
   background-position: 100% 100%;
 }
 
-.slide-1:checked ~ .slider-list .slide-item-1 {
+.slide-1:checked ~ .slider__list .slide-item-1 {
   display: block;
 }
 
-.slide-2:checked ~ .slider-list .slide-item-2 {
+.slide-2:checked ~ .slider__list .slide-item-2 {
   display: block;
 }
 
-.slide-3:checked ~ .slider-list .slide-item-3 {
+.slide-3:checked ~ .slider__list .slide-item-3 {
   display: block;
 }
 
-.slider-promo {
+.slide__lead {
   margin: 0;
   margin-bottom: 28px;
   width: 400px;
@@ -232,24 +232,24 @@ a {
   color: #000;
 }
 
-.slide-item-2 .slider-promo {
+.slide-item-2 .slide__lead {
   width: 600px;
 }
 
-.slide-item-3 .slider-promo {
+.slide-item-3 .slide__lead {
   width: 460px;
 }
 
-.slider-promo-text {
+.slide__text {
   margin: 0;
   margin-bottom: 39px;
 }
 
-.slide-item-2 .slider-promo-text {
+.slide-item-2 .slide__text {
   width: 430px;
 }
 
-.slide-item-3 .slider-promo-text {
+.slide-item-3 .slide__text {
   width: 360px;
 }
 
@@ -265,17 +265,17 @@ a {
   text-align: center;
 }
 
-.slider-item-button {
+.slide__button {
   width: 240px;
   background-color: #fb565a;
   border-radius: 3px;
 }
 
-.slider-item-button:hover {
+.slide__button:hover {
   background-color: #e74246;
 }
 
-.slider-item-button:active {
+.slide__button:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
