@@ -10,7 +10,7 @@
 <body>
   <header class="main-header">
     <nav class="main-nav container">
-      <a class="header-logo">
+      <a class="header-logo" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds Логотип">
       </a>
       <ul class="main-nav__list site-list">
@@ -115,7 +115,7 @@
           <h3 class="sorting__title">Сортировать:</h3>
           <ul class="sorting__list">
             <li class="sorting__item">
-              <a class="sorting__link sorting__link--active" href="#">По цене</a>
+              <a class="sorting__link sorting__link--active">По цене</a>
             </li>
             <li class="sorting__item">
               <a class="sorting__link" href="#">По типу</a>
@@ -126,7 +126,7 @@
             <li>
               <ul class="sort-container">
                 <li>
-                  <a class="sort__button" href="#">
+                  <a class="sort__button sort__button--active" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                   </a>
                 </li>
@@ -139,62 +139,70 @@
             </li>
           </ul>
         </div>
-        <div class="catalog-list">
-          <article class="catalog-item">
+        <div class="catalog__list">
+          <article class="catalog__item">
             <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-            <div class="popup">
-              <h4>Sedona</h4>
-              <p>Информационный сайт для туристов</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup popup">
+              <h4 class="popup__title">Sedona</h4>
+              <p class="popup__text">Информационный сайт для туристов</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
-          <article class="catalog-item">
+          <article class="catalog__item">
             <img src="img/img-pink.jpg" alt="Pink" width="360" height="576">
-            <div class="popup">
-              <h4>Pink app</h4>
-              <p>Продуктовый лендингприложения для iOS и Android</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup">
+              <h4 class="popup__title">Pink app</h4>
+              <p class="popup__text">Продуктовый лендингприложения для iOS и Android</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
-          <article class="catalog-item">
+          <article class="catalog__item">
             <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-            <div class="popup">
-              <h4>Barbershop</h4>
-              <p>Сайт салоны красоты.Для мужчин, да.</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup">
+              <h4 class="popup__title">Barbershop</h4>
+              <p class="popup__text">Сайт салоны красоты.Для мужчин, да.</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
-          <article class="catalog-item">
+          <article class="catalog__item">
             <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
-            <div class="popup">
-              <h4>Mishka</h4>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup">
+              <h4 class="popup__title">Mishka</h4>
+              <p class="popup__text">Интернет-магазин вязаных игрушек</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
-          <article class="catalog-item">
+          <article class="catalog__item">
             <img src="img/img-aplus.jpg" alt="Aplus" width="360" height="576">
-            <div class="popup">
-              <h4>A plus</h4>
-              <p>Лендинг курсов повышения квалификации</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup">
+              <h4 class="popup__title">A plus</h4>
+              <p class="popup__text">Лендинг курсов повышения квалификации</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
-          <article class="catalog-item">
+          <article class="catalog__item">
             <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576">
-            <div class="popup">
-              <h4>Кваст</h4>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <button>9 900 руб.</button>
+            <div class="catalog__popup">
+              <h4 class="popup__title">Кваст</h4>
+              <p class="popup__text">Промо-сайт производителя крафтового кваса</p>
+              <button class="button popup__button">9 900 руб.</button>
             </div>
           </article>
         </div>
       
-        <ul class="pagination-list">
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+        <ul class="catalog__pagination pagination">
+          <li>
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li>
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li>
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li>
+            <a class="pagination__link pagination__link--next" href="#">Следующая</a>
+          </li>
         </ul>
       </section>
     </div>  
@@ -241,7 +249,7 @@
     </div>
   </footer>
 
-  <section class="feedback feedback-show">
+  <section class="feedback">
     <h2 class="feedback__title">Напишите нам</h2>
     <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
       <div class="feedback__container">
@@ -265,5 +273,6 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
     </button>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
