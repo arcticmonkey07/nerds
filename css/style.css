@@ -720,6 +720,7 @@ a {
   margin-bottom: 35px;
   padding-top: 10px;
   padding-left: 13px;
+  border: 2px solid #d7dcde;
 }
 
 .feedback__textarea:hover {
@@ -736,6 +737,7 @@ a {
   right: 8.5%;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .feedback__close path {
@@ -880,6 +882,7 @@ a {
   height: 25px;
   background-image: url("../img/radio-off.svg");
   opacity: .4;
+  cursor: pointer;
 }
 
 .radio-indicator:hover {
@@ -905,6 +908,7 @@ a {
   padding-top: 3px;
   padding-left: 34px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filters__group--checkbox {
@@ -924,9 +928,10 @@ a {
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   opacity: .4;
+  cursor: pointer;
 }
 
-.checkbox-indicator:hover {
+.checkbox-indicator:hover::before {
   opacity: 1;
 }
 
@@ -1059,6 +1064,7 @@ a {
   position: relative;
   width: 360px;
   margin-bottom: 27px;
+  cursor: pointer;
 }
 
 .catalog__item:nth-child(2n) {
